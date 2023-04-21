@@ -1,1 +1,2 @@
-console.log('hello')
+import { inject } from '@vercel/analytics';
+inject();
