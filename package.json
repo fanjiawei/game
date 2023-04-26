@@ -3,17 +3,18 @@
   "private": true,
   "scripts": {
     "build:prod": "webpack -c webpack.config.js",
-    "start": "webpack serve -c webpack.config.js"
+    "start": "NODE_ENV=development webpack serve -c webpack.config.js"
   },
   "volta": {
     "node": "18.15.0"
   },
   "devDependencies": {
+    "@vercel/analytics": "^1.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "html-webpack-plugin": "^5.5.1",
     "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.3",
-    "@vercel/analytics": "^1.0.0"
+    "workbox-webpack-plugin": "^6.5.4"
   }
 }

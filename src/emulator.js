@@ -1,4 +1,4 @@
-var EJS = function(_0x574f5e) {
+window.EJS = function(_0x574f5e) {
     window.EJS_MODULES = _0x574f5e;
     var _0x41a1e4 = {};
     var o = [];

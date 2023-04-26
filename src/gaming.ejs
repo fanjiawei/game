@@ -5,8 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="在线玩游戏">
+    <meta name="description" content="在线玩<%= rom.substring(0, rom.lastIndexOf('.')) %>">
     <meta name="keyword" content="<%= rom.substring(0, rom.lastIndexOf('.')) %>,游戏,在线游戏,玩游戏,模拟器,fc,nes,红白机">
+    <meta name="application-name" content="<%= rom.substring(0, rom.lastIndexOf('.')) %>">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="renderer" content="webkit">
+    <meta name="x5-page-mode" content="app">
+    <meta name="browsermode" content="application">
     <title><%= rom.substring(0, rom.lastIndexOf('.')) %></title>
     <style>
         html, body {
@@ -42,6 +48,6 @@
     EJS_pathtodata = 'data/';
     EJS_startOnLoaded = false;
 </script>
-<script src='data/loader.js'></script>
+<!--<script src='data/loader.js'></script>-->
 </body>
 </html>
