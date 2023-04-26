@@ -19,7 +19,8 @@ function getGameNavPageConfig(roms) {
     // mode: 'production',
     entry: {
       index: './src/index.js',
-      loader: './src/loader.js'
+      loader: './src/loader.js',
+      serviceWorker: './src/service-worker.js'
     },
     plugins: [
       new CopyPlugin({
@@ -38,7 +39,7 @@ function getGameNavPageConfig(roms) {
           template: 'src/gaming.ejs',
           filename: `${i}.html`,
           templateParameters: {rom: i},
-          chunks: ['loader']
+          chunks: ['loader', 'serviceWorker']
         });
       }),
       new WorkboxPlugin.GenerateSW({
